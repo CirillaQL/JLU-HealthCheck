@@ -17,7 +17,7 @@ flag = driver.find_elements_by_xpath("//a[@href='/jlu_portal/login']")
 if len(flag) == 1:
     driver.find_element_by_xpath("//a[@href='/jlu_portal/login']").click()
     driver.find_element_by_name("username").send_keys("#你的用户名")
-    driver.find_element_by_name("password").send_keys("#你的邮箱")
+    driver.find_element_by_name("password").send_keys("#你的邮箱密码")
     driver.find_element_by_name("login_submit").click()
 
 time.sleep(2)
